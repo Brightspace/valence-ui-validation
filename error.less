@@ -1,9 +1,42 @@
+@vui-error-backgroundColor: #ffeeec;
+@vui-error-borderColor: #ff7962;
+@vui-error-borderStyle: solid;
+@vui-error-borderWidth: 5px;
+@vui-error-borderRadius: 3px;
+@vui-error-padding: 6px;
 
 #vui {
 
-	.Error() {
-		padding: 0;
-		margin: 0;
+	.Error(
+			@backgroundColor: @vui-error-backgroundColor,
+			@borderColor: @vui-error-borderColor,
+			@borderStyle: @vui-error-borderStyle,
+			@borderWidth: @vui-error-borderWidth,
+			@borderRadius: @vui-error-borderRadius,
+			@padding: @vui-error-padding
+		) {
+		background-color: @backgroundColor;
+		border-width: 0;
+		border-left:
+			@borderWidth
+			@borderStyle
+			@borderColor;
+		border-bottom-right-radius: @borderRadius;
+		border-top-right-radius: @borderRadius;
+		padding: @padding;
+
+		[dir='rtl'] & {
+			border-left-width: 0;
+			border-right:
+				@borderWidth
+				@borderStyle
+				@borderColor;
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+			border-bottom-left-radius: @borderRadius;
+			border-top-left-radius: @borderRadius;
+		}
+
 	}
 
 }
