@@ -1,3 +1,11 @@
 language: node_js
 node_js:
 - '0.10'
+deploy:
+  provider: npm
+  email: d2ltravisdeploy@d2l.com
+  api_key:
+    secure: U0ZgcK8uTMkwF8UERpwbrA5isyZoqXRtj7/GExuSP0fdtIUkmR+bbk8nSErT1FDF0X8qV+UYjsHR6zDOiNifMWqMYdOKG5c+c4IWJ1UUubGwrFPvD0DJf0Qm46gOo73N9p4bzxDfd/iE3ulotvTb6PTOcQ8BfGM/KvXhIUWbVYU=
+  on:
+    tags: true
+    all_branches: true
