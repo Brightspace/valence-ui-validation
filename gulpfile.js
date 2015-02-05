@@ -3,11 +3,11 @@ var gulp = require( 'gulp' ),
 	vui = require( 'vui-helpers' );
 
 gulp.task( 'clean', function( cb ) {
-	del([ 'error.css' ], cb);
+	del([ 'validation.css' ], cb);
 } );
 
 gulp.task( 'css', function () {
-	return vui.makeCss( 'error.css.less', 'error.css' );
+	return vui.makeCss( 'validation.css.less', 'validation.css' );
 } );
 
 gulp.task( 'default', [ 'clean' ], function() {
@@ -18,7 +18,7 @@ gulp.task( 'test', function () {
 	return vui.test( {
 		files: [
 			'test/unit/**/*Spec.js',
-			'error.css'
+			'validation.css'
 		]
 	} ) ;
 } );
