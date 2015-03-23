@@ -1,7 +1,90 @@
+@vui-validation-invalid-backgroundColor: #fff4f4;
+@vui-validation-invalid-borderColor: #ff9b9b;
+@vui-validation-invalid-borderColor-focus: #ff7171;
+@vui-validation-invalid-borderStyle: solid;
+@vui-validation-invalid-borderWidth: 1px;
+@vui-validation-invalid-boxShadow: inset 0 1px 2px rgba(0,0,0,.13);
+@vui-validation-invalid-boxShadow-focus: 0 0 5px 0 rgba(255,155,155,.8);
+
+@vui-validation-bubble-content-color: #ffffff;
+@vui-validation-bubble-content-fontStyle: italic;
+@vui-validation-bubble-content-fontWeight: bold;
+@vui-validation-bubble-content-backgroundColor: #d24131;
+@vui-validation-bubble-content-borderRadius: 3px;
+@vui-validation-bubble-content-boxShadow: 2px 3px 3px 0 rgba(0,0,0,.13);
+
 #vui {
 
-	.Validation() {
-		background-color: red;
+	.Validation() { }
+
+	.Validation {
+
+		.invalid() {
+
+			background-color: @vui-validation-invalid-backgroundColor;
+			border:
+				@vui-validation-invalid-borderWidth
+				@vui-validation-invalid-borderStyle
+				@vui-validation-invalid-borderColor;
+			box-shadow: @vui-validation-invalid-boxShadow;
+
+			&:focus {
+				border-color: @vui-validation-invalid-borderColor-focus;
+				box-shadow: @vui-validation-invalid-boxShadow-focus;
+				outline-width: 0;
+			}
+
+		}
+
+		.Bubble() {
+			display: none;
+			position: absolute;
+			width: 200px;
+		}
+
+		.Bubble {
+			.show() {
+				display: block;
+			}
+		}
+
+		.BubbleContent() {
+
+			position: absolute;
+			top: 4px;
+			left: -3px;
+			background-color: @vui-validation-bubble-content-backgroundColor;
+			border: 1px solid transparent;
+			border-radius: @vui-validation-bubble-content-borderRadius;
+			box-shadow: @vui-validation-bubble-content-boxShadow;
+			color: @vui-validation-bubble-content-color;
+			padding: 4px 9px;
+			font-style: @vui-validation-bubble-content-fontStyle;
+			font-weight: @vui-validation-bubble-content-fontWeight;
+			text-shadow: none;
+			z-index: 9999;
+			[dir='rtl'] & {
+				left: auto;
+				right: -3px;
+			}
+
+			&::before {
+				border: solid;
+				border-color: @vui-validation-bubble-content-backgroundColor transparent;
+				border-width: 0 6px 6px 6px;
+				content: "";
+				position: absolute;
+				z-index: 9999;
+				left: 14px;
+				top: -7px;
+				[dir='rtl'] & {
+					left: auto;
+					right: 14px;
+				}
+			}
+
+		}
+
 	}
 
 }
