@@ -18,7 +18,9 @@
 				expect(document).toHaveCssSelector('.vui-validation-bubble');
 				expect(document).toHaveCssSelector('.vui-validation-bubble-show');
 				expect(document).toHaveCssSelector('.vui-validation-bubble-content');
+				expect(document).toHaveCssSelector('[dir="rtl"] .vui-validation-bubble-content');
 				expect(document).toHaveCssSelector('.vui-validation-bubble-content::before');
+				expect(document).toHaveCssSelector('[dir="rtl"] .vui-validation-bubble-content::before');
 			} );
 
 		} );
