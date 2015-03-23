@@ -63,6 +63,10 @@
 			font-weight: @vui-validation-bubble-content-fontWeight;
 			text-shadow: none;
 			z-index: 9999;
+			[dir='rtl'] & {
+				left: auto;
+				right: -3px;
+			}
 
 			&::before {
 				border: solid;
@@ -73,6 +77,10 @@
 				z-index: 9999;
 				left: 14px;
 				top: -7px;
+				[dir='rtl'] & {
+					left: auto;
+					right: 14px;
+				}
 			}
 
 		}
