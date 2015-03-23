@@ -1,6 +1,6 @@
 {
   "name": "vui-validation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "LESS mixins and CSS for styling validation messages",
   "scripts": {
     "test": "gulp && gulp test"
