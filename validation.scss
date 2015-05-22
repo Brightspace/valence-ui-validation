@@ -1,18 +1,18 @@
 
-$vui-validation-invalid-backgroundColor: #fff4f4;
-$vui-validation-invalid-borderColor: #ff9b9b;
-$vui-validation-invalid-borderColor-focus: #ff7171;
-$vui-validation-invalid-borderStyle: solid;
-$vui-validation-invalid-borderWidth: 1px;
-$vui-validation-invalid-boxShadow: inset 0 1px 2px rgba(0,0,0,.13);
-$vui-validation-invalid-boxShadow-focus: 0 0 5px 0 rgba(255,155,155,.8);
+$vui-validation-invalid-backgroundColor: #fff4f4 !default;
+$vui-validation-invalid-borderColor: #ff9b9b !default;
+$vui-validation-invalid-borderColor-focus: #ff7171 !default;
+$vui-validation-invalid-borderStyle: solid !default;
+$vui-validation-invalid-borderWidth: 1px !default;
+$vui-validation-invalid-boxShadow: inset 0 1px 2px rgba(0,0,0,.13) !default;
+$vui-validation-invalid-boxShadow-focus: 0 0 5px 0 rgba(255,155,155,.8) !default;
 
-$vui-validation-bubble-content-color: #ffffff;
-$vui-validation-bubble-content-fontStyle: italic;
-$vui-validation-bubble-content-fontWeight: bold;
-$vui-validation-bubble-content-backgroundColor: #d24131;
-$vui-validation-bubble-content-borderRadius: 3px;
-$vui-validation-bubble-content-boxShadow: 2px 3px 3px 0 rgba(0,0,0,.13);
+$vui-validation-bubble-content-color: #ffffff !default;
+$vui-validation-bubble-content-fontStyle: italic !default;
+$vui-validation-bubble-content-fontWeight: bold !default;
+$vui-validation-bubble-content-backgroundColor: #d24131 !default;
+$vui-validation-bubble-content-borderRadius: 3px !default;
+$vui-validation-bubble-content-boxShadow: 2px 3px 3px 0 rgba(0,0,0,.13) !default;
 
 @mixin vui-validation-invalid() {
 
