@@ -64,7 +64,7 @@ Bubbles are intended to be displayed on focus.  In the follwing example, the con
 
 ```
 
-**Important:** form elements should be marked up to provide validation information that is available to assistive technology.
+**Important:** form elements should be marked up to provide validation information that is available to assistive technology, for example, by using `aria-invalid`, `aria-required`, and `aria-describedby`.
 
 ## Coding styles
 
