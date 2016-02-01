@@ -1,0 +1,46 @@
+@import 'bower_components/vui-typography/typography.scss';
+@import '../validation.scss';
+
+html {
+	font-size: 20px;
+}
+body {
+	@include vui-typography;
+	margin: 1rem;
+}
+table {
+	max-width: 1000px;
+	margin-bottom: 100px;
+}
+td, th {
+	padding: 0.5rem;
+}
+input {
+	border-radius: 0.3rem;
+	padding: 0.4rem 1rem;
+}
+
+.invalid {
+	@include vui-validation-invalid;
+	&:focus,
+	&:hover {
+		padding: calc(0.4rem - 1px) calc(1rem - 1px);
+	}
+}
+
+.invalid-focus {
+	@include vui-validation-invalid;
+	@include _vui-validation-invalid-focus;
+}
+
+.bubble {
+	@include vui-validation-bubble;
+}
+
+.bubble-show {
+	@include vui-validation-bubble-show;
+}
+
+.bubble-content {
+	@include vui-validation-bubble-content;
+}

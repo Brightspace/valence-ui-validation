@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Validation Bubble Sample</title>
+		<link rel="stylesheet" type="text/css" href="test.css" />
+	</head>
+	<body>
+		<h1>Validation Bubble</h1>
+		<h2>LTR</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>State</th>
+					<th>Bubble</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Hidden</th>
+					<td>
+						<input type="text" class="invalid" >
+						<div class="bubble">
+							<span class="bubble-content">Grumpy wizards use wrong ingredients for brew.</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>Visible</th>
+					<td>
+						<input type="text" class="invalid-focus" >
+						<div class="bubble bubble-show">
+							<span class="bubble-content">Grumpy wizards use wrong ingredients for brew.</span>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>RTL</h2>
+		<table dir="rtl">
+			<thead>
+				<tr>
+					<th>State</th>
+					<th>Bubble</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Hidden</th>
+					<td>
+						<input type="text" class="invalid" >
+						<div class="bubble">
+							<span class="bubble-content">Grumpy wizards use wrong ingredients for brew.</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>Visible</th>
+					<td>
+						<input type="text" class="invalid-focus" >
+						<div class="bubble bubble-show">
+							<span class="bubble-content">Grumpy wizards use wrong ingredients for brew.</span>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</body>
+</html>
