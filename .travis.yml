@@ -14,3 +14,6 @@ deploy:
   on:
     tags: true
     all_branches: true
+env:
+  global:
+    secure: XqOJXEqMzLY+RE/b5qYJGgjXDXhlpgSuLynI0xOoy99fSkZd4fpcWE0ZNSHmJWaouKgI8Yp2kkQY0IBY0u/C3WLO+KOaUovHQ8bjxbicumVKnXr7nyr6SF263DdgMQrlJh0mp/71b43j9OZ3wHf2FGE5094FWeh/CEdzY+ERfWw=
