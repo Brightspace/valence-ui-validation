@@ -43,7 +43,7 @@ Bubbles are intended to be displayed on focus.  In the follwing example, the con
 
 
 ```html
-<input type="text" aria-invalid="true" aria-describedby="validation-message">
+<input type="text" aria-invalid="true" aria-describedby="validation-message" />
 <div id="validation-message" class="bubble bubble-show">
 	<span>A validation message.</span>
 </div>
