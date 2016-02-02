@@ -2,8 +2,9 @@
 .gitattributes
 .gitignore
 .npmignore
+.csslintrc
 .travis.yml
+bower_components
 node_modules
-karma.conf.js
 test
 validation.css.scss
