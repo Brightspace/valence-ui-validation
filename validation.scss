@@ -1,24 +1,6 @@
 @import 'bower_components/vui-colors/colors.scss';
 @import 'bower_components/vui-typography/small-text.scss';
 
-@mixin _vui-validation-invalid-focus() {
-
-	border-width: 2px;
-	outline-width: 0;
-
-}
-
-@mixin vui-validation-invalid() {
-
-	border: 1px solid $vui-color-cinnabar;
-
-	&:hover,
-	&:focus {
-		@include _vui-validation-invalid-focus;
-	}
-
-}
-
 @mixin vui-validation-bubble() {
 	display: none;
 	position: absolute;

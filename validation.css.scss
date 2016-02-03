@@ -1,9 +1,5 @@
 @import 'validation';
 
-.vui-invalid {
-	@include vui-validation-invalid;
-}
-
 .vui-validation-bubble {
 	@include vui-validation-bubble;
 }
