@@ -29,14 +29,6 @@ Depending on which installation method you choose, use that path when doing the 
 
 ## Usage
 
-**Invalid Input:**
-```scss
-
-.invalid {
-	@include vui-validation-invalid;
-}
-```
-
 **Bubbles:**
 
 Bubbles are intended to be displayed on focus.  In the follwing example, the consumer would apply the `bubble-show` class to display the bubble.
