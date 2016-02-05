@@ -9,8 +9,12 @@ body {
 	margin: 1rem;
 }
 table {
+	width: 100%;
 	max-width: 1000px;
 	margin-bottom: 100px;
+}
+tr {
+	height: 5rem;
 }
 td, th {
 	padding: 0.5rem;
