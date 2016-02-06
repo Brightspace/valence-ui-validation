@@ -16,6 +16,9 @@ table {
 tr {
 	height: 5rem;
 }
+tr.above {
+	height: 22rem;
+}
 td, th {
 	padding: 0.5rem;
 }
@@ -30,4 +33,8 @@ td, th {
 
 .bubble-content {
 	@include vui-validation-bubble-content;
+}
+
+.bubble-content-above {
+	@include vui-validation-bubble-content-above;
 }
