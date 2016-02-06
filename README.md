@@ -74,7 +74,7 @@ Bubbles can also be displayed above content.
 	@include vui-validation-bubble-show;
 }
 
-.bubble > span {
+.bubble-above > span {
 	@include vui-validation-bubble-content-above;
 }
 
