@@ -55,6 +55,30 @@ Bubbles are intended to be displayed on focus.  In the follwing example, the con
 }
 
 ```
+Bubbles can also be displayed above content.
+
+
+```html
+<div id="validation-message" class="bubble-above bubble-show">
+	<span>A validation message.</span>
+</div>
+<input type="text" aria-invalid="true" aria-describedby="validation-message" />
+```
+
+```scss
+.bubble-above {
+	@include vui-validation-bubble;
+}
+
+.bubble-show {
+	@include vui-validation-bubble-show;
+}
+
+.bubble > span {
+	@include vui-validation-bubble-content-above;
+}
+
+```
 
 **Important:** form elements should be marked up to provide validation information that is available to assistive technology, for example, by using `aria-invalid`, `aria-required`, and `aria-describedby`.
 
