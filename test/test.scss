@@ -1,4 +1,5 @@
 @import 'bower_components/vui-typography/typography.scss';
+@import 'bower_components/vui-input/input.scss';
 @import '../validation.scss';
 
 html {
@@ -21,6 +22,14 @@ tr.above {
 }
 td, th {
 	padding: 0.5rem;
+}
+
+input,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"] {
+  @include vui-input;
 }
 
 .bubble {

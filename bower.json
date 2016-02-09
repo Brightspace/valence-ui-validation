@@ -15,5 +15,8 @@
   "dependencies": {
     "vui-colors": "^0.2.0",
     "vui-typography": "^2.0.1"
+  },
+  "devDependencies": {
+    "vui-input": "^1.5.1"
   }
 }
