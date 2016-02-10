@@ -12,10 +12,9 @@
 	display: block;
 }
 
-@mixin vui-validation-bubble-content() {
+@mixin _vui-validation-bubble-content() {
 
 	position: absolute;
-	top: 0.25rem;
 	left: -0.5rem;
 	background-color: $vui-color-ferrite;
 	border: 1px solid transparent;
@@ -23,8 +22,9 @@
 	padding: 0.7rem 1rem;
 	z-index: 10;
 
+
 	@include vui-typography-small-text(
-			$color: $vui-color-white, 
+			$color: $vui-color-white,
 			$margin: 0
 		);
 
@@ -36,16 +36,41 @@
 	&::before {
 		border: solid;
 		border-color: $vui-color-ferrite transparent;
-		border-width: 0 0.7rem 0.7rem 0.7rem;
 		content: "";
 		position: absolute;
 		z-index: 10;
 		left: 1rem;
-		top: -0.7rem;
 		[dir='rtl'] & {
 			left: auto;
 			right: 1rem;
 		}
+
+	}
+
+}
+
+@mixin vui-validation-bubble-content() {
+
+	@include _vui-validation-bubble-content;
+
+	top: 0.25rem;
+
+	&::before {
+		top: -0.7rem;
+		border-width: 0 0.7rem 0.7rem 0.7rem;
+	}
+
+}
+
+@mixin vui-validation-bubble-content-above() {
+
+	@include _vui-validation-bubble-content;
+
+	bottom: 0.25rem;
+
+	&::before {
+		bottom: -0.7rem;
+		border-width: 0.7rem 0.7rem 0 0.7rem;
 	}
 
 }
