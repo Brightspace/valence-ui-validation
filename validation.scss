@@ -12,6 +12,16 @@
 	display: block;
 }
 
+@keyframes vui-bubble-animation-show {
+	0% { top: 0.75rem; opacity: 0; }
+	100% { top: 0.25rem; opacity: 1; }
+}
+
+@keyframes vui-bubble-animation-above-show {
+	0% { bottom: 0.75rem; opacity: 0; }
+	100% { bottom: 0.25rem; opacity: 1; }
+}
+
 @mixin _vui-validation-bubble-content() {
 
 	position: absolute;
@@ -21,7 +31,6 @@
 	border-radius: 0.3rem;
 	padding: 0.7rem 1rem;
 	z-index: 10;
-
 
 	@include vui-typography-small-text(
 			$color: $vui-color-white,
@@ -60,6 +69,9 @@
 		border-width: 0 0.7rem 0.7rem 0.7rem;
 	}
 
+	animation: vui-bubble-animation-show 200ms ease;
+
+
 }
 
 @mixin vui-validation-bubble-content-above() {
@@ -72,5 +84,7 @@
 		bottom: -0.7rem;
 		border-width: 0.7rem 0.7rem 0 0.7rem;
 	}
+
+	animation: vui-bubble-animation-above-show 200ms ease;
 
 }
