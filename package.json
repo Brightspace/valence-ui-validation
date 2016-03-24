@@ -29,7 +29,9 @@
   },
   "homepage": "https://github.com/Brightspace/valence-ui-validation",
   "dependencies": {
-    "bower": "^1.5.3"
+    "bower": "^1.5.3",
+    "vui-colors": "git://github.com/Brightspace/valence-ui-colors.git#sass",
+    "vui-typography": "git://github.com/Brightspace/valence-ui-typography.git#bsi-wc"
   },
   "devDependencies": {
     "csslint": "^0.10.0",
