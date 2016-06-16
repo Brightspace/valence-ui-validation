@@ -1,5 +1,4 @@
-@import 'bower_components/vui-colors/colors.scss';
-@import 'bower_components/vui-typography/small-text.scss';
+@import 'bower_components/d2l-colors/d2l-colors.scss';
 
 @mixin vui-validation-bubble() {
 	display: none;
@@ -26,16 +25,19 @@
 
 	position: absolute;
 	left: -0.5rem;
-	background-color: $vui-color-ferrite;
+	background-color: $d2l-color-ferrite;
 	border: 1px solid transparent;
 	border-radius: 0.3rem;
 	padding: 0.7rem 1rem;
 	z-index: 10;
 
-	@include vui-typography-small-text(
-			$color: $vui-color-white,
-			$margin: 0
-		);
+	color: $d2l-color-white;
+	font-family: inherit;
+	font-size: 0.7rem;
+	font-weight: 400;
+	line-height: 1rem;
+	letter-spacing: 0.02rem;
+	margin: 0;
 
 	[dir='rtl'] & {
 		left: auto;
@@ -44,7 +46,7 @@
 
 	&::before {
 		border: solid;
-		border-color: $vui-color-ferrite transparent;
+		border-color: $d2l-color-ferrite transparent;
 		content: "";
 		position: absolute;
 		z-index: 10;
