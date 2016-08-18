@@ -13,9 +13,9 @@
     "package.json"
   ],
   "dependencies": {
-    "d2l-colors": "~2.0.0"
+    "d2l-colors": "^2.1.0"
   },
   "devDependencies": {
-    "vui-input": "~1.6.0"
+    "vui-input": "^1.6.0"
   }
 }
