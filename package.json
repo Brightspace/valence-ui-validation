@@ -1,6 +1,6 @@
 {
   "name": "vui-validation",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Mixins and CSS for styling validation messages",
   "scripts": {
     "clean": "rimraf *.css && rimraf ./test/*.css",
